@@ -1,4 +1,4 @@
-Flask ToDo App
+![Update tasks](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/666da5fd-74a2-4101-9a4f-9d6fdb25a3a3)Flask ToDo App
 
 This Flask application implements a simple ToDo list, allowing users to add, update, and delete tasks. It utilizes a SQLite database to persist tasks. The web interface is built with HTML and uses the Semantic UI framework for styling.
 
@@ -20,3 +20,5 @@ Run the Flask application.
 Open the web page and start managing your ToDo list.
 Add, update, or delete tasks as needed.
 This application provides a basic foundation for a ToDo list with a clean and user-friendly interface. Users can easily interact with their tasks and keep track of their completion status.
+
+
