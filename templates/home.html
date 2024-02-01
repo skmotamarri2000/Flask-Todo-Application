@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Application</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #fff;
+        }
+
+        section {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .todo-item {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .todo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .todo-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .todo-actions button {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .todo-actions button.update {
+            background-color: #007bff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>To-Do App</h1>
+    </header>
+
+    <section>
+        <form action="/add" method="post">
+            <label for="titleitem">Add a ToDo item:</label>
+            <input type="text" name="title" id="titleitem" placeholder="Enter your ToDo item...">
+            <button type='submit'>Add</button>
+        </form>
+
+        {% for todo in todo_list %}
+        <div class="todo-item">
+            <div class="todo-header">
+                <p>{{todo.id}} | {{todo.title}}</p>
+                <span>{% if todo.complete == False %}Not Complete{% else %}Completed{% endif %}</span>
+            </div>
+
+            <div class="todo-actions">
+                <button class="update" onclick="location.href='/update/{{ todo.id }}'">Update</button>
+                <button onclick="location.href='/delete/{{ todo.id }}'">Delete</button>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+
+</body>
+</html>
