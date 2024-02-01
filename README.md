@@ -34,7 +34,7 @@ Task Updated from not complete to completed
 ![image](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/0b958a8f-5097-419e-a451-b323183fb0f9)
 
 # Delete Task
-If we click on the task will be deleted. 
+If we click on Delete button, the task will be deleted. 
 
 
 
