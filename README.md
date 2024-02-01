@@ -1,4 +1,5 @@
-![Todo web page](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/9243def2-f90c-48e3-a06f-ed5aa62e0e42)
+![image](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/406abc2b-68c8-4ddf-8a72-6c393a72a2bb)
+
 
 
 Flask ToDo App
@@ -23,6 +24,17 @@ Run the Flask application.
 Open the web page and start managing your ToDo list.
 Add, update, or delete tasks as needed.
 This application provides a basic foundation for a ToDo list with a clean and user-friendly interface. Users can easily interact with their tasks and keep track of their completion status.
+
+# Add Task
+![image](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/caecaa23-7b10-49d9-b289-c302d2a8634b)
+
+# Update Task
+
+Task Updated from not complete to completed
+![image](https://github.com/skmotamarri2000/Todo-Application/assets/144952861/0b958a8f-5097-419e-a451-b323183fb0f9)
+
+# Delete Task
+If we click on the task will be deleted. 
 
 
 
